@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap Css Link -->
+  <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <!-- Font Awesome Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Css File -->
+  <link rel="stylesheet" href="Css/style.css">
+  <!-- Responsive Css File -->
+  <link rel="stylesheet" href="Css/responsive.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon-32x32.png">
+  <title>Historical Monuments || Historical Monuments</title>
+  <style>
+    body {
+      background-color: var(--ocelot);
+    }
+
+    .card {
+      width: 350px !important;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+    .filter-btn {
+      text-transform: capitalize;
+      width: 150px;
+    }
+    .monument-card{
+      transition: all 0.3s ease-in-out;
+    }
+    .monument-card:hover{
+        transform: translateY(-25px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="loader">
+    <img src="Assets/Logo/city-hall.png" alt="Logo">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Bottom To Top Scroll -->
+  <a href="#" class="scrollup text-decoration-none" id="scroll-up"><i class="fas fa-chevron-up"></i></a>
+
+  <!-- Nav Bar -->
+
+  <nav class="navbar navbar-expand-lg sticky-top nav px-5 py-4" id="nav-placeholder">
+
+  </nav>
+
+  <!-- Header -->
+
+  <header class="header-2">
+
+    <!-- Banner -->
+
+    <section class="home-banner-2">
+      <div class="banner-2">
+        <!-- <video src="Assets/Videos/home-slide-fv-4.mp4" class="banner-video" autoplay muted loop></video> -->
+        <img src="Assets/Images/Slider-Img/Historical monuments-2.jpg" alt="">
+        <div class="banner-content hide">
+          <h1 class="primary-heading-light fade-from-top">Windows to History</h1>
+          <span class="fade-from-bottom">Discovering the World's Treasures</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Main Contect -->
+
+  <!-- Histocial Monuments  Section -->
+
+  <section class="historical-monuments" style="margin-bottom: 100px;">
+    <h2 class="primary-heading-dark text-center">Historical Monuments</h2>
+    <h6 class="sub-heading uppercase text-center mb-5">Exploring the Depths of Historical Monuments</h6>
+    <div class="filter-btn-container text-center w-75 contaier mx-auto mb-5 g-4">
+      <button class="btn section-btn filter-btn mx-3 my-3" onclick="categorize('all')">all</button>
+    </div>
+    <div class="row monuments-container justify-content-center my-4 gap-5 w-100 mx-auto">
+
+    </div>
+  </section>
+
+  <!-- Feed Back Section -->
+
+  <section class="join-our-journey-section mb-5">
+    <div class="container mx-auto text-center py-5 px-5">
+      <h6 class="sub-heading">Journey</h6>
+      <h2 class="primary-heading-light">Join Our Journey</h2>
+      <p class="text-content text-light my-4">We invite you to join us on our journey of discovery and appreciation for
+        the world's historical monuments. Whether you're a seasoned traveler, a history buff, or simply curious
+        about the past, there's a place for you in our community. Follow us on social media, sign up for our
+        newsletter, or become a contributor to share your own experiences and insights. Together, let's
+        celebrate the wonders of history and ensure that they remain cherished for generations to come.</p>
+      <a href="feedback.html"><button class="btn section-btn-dark">Give feedback</button></a>
+    </div>
+  </section>
+
+  <!-- Advertise - Section -->
+
+  <section class="our-mission-section" style="background-color: white;">
+    <div class="container d-flex rd-flex py-5">
+      <div class="column w-50">
+        <img src="Assets/Images/travel-featured-img-2.jpg" alt="" class="center-two rounded">
+      </div>
+      <div class="column w-50 py-3 px-4">
+        <h6 class="sub-heading uppercase"><i class="fa-solid fa-circle-info mx-2"
+            style="color: var(--harvesBlessing);"></i>Trave-With-us</h6>
+        <h2 class="primary-heading-dark">Take a tour with us</h2>
+        <p class="text-content">At Hiatorical Monuments, we invite you to embark on an unforgettable journey through
+          time and culture as we explore the world's most iconic historical monuments. Our passion for heritage
+          and fascination with ancient civilizations drive us to share the wonders of the past with you.</p>
+        <p class="text-content">Step into the footsteps of emperors, pharaohs, and rulers of antiquity as we delve
+          into the rich tapestry of human civilization. From the breathtaking grandeur of the Great Wall of China
+          to the mystical allure of Machu Picchu, each monument we encounter tells a st my-4ory of triumph, innovation,
+          and the enduring spirit of humanity.</p>
+        <a href="travel-with-us.html"><button class="btn section-btn">Read More</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-5 pt-5" id="footerPlaceholder">
+
+  </footer>
+
+  <!-- Java Script -->
+
+  <!-- bootstrap - link -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="Bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+  <!-- Gsap Library Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Jquery - Cdn  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Js File  -->
+  <script src="Js/script.js"></script>
+  <script src="Js/monuments.js"></script>
+  <script src="Js/HFB.js"></script>
+  <script>
+    // For Loop With Filteration for Displatying Monuments
+
+    for (let i = 0; i < zones.length; i++) {
+      document.querySelector(
+        ".filter-btn-container"
+      ).innerHTML += `<button class="btn section-btn filter-btn mx-3 my-3" onclick="categorize('${zones[i]}')">${zones[i]}</button>`;
+    }
+
+    function categorize(zone) {
+      if (zone == "all") {
+        document.querySelector(".monuments-container").innerHTML = "";
+        for (let i = 0; i <= monuments.length; i++) {
+          document.querySelector(".monuments-container").innerHTML += `<div class="card p-0 monument-card" style="width: 18rem;">
+        <a href="monument.html?id=${monuments[i].id}" class="text-decoration-none">
+        <img src="${monuments[i].img}" class="card-img-top" alt="${monuments[i].name}">
+        <div class="card-body">
+          <h5 class="card-title secondary-heading-dark">${monuments[i].name}</h5>
+          <p class="card-text text-content-bold">Country: <span class="sub-heading">${monuments[i].location}</span> </p>
+          <p class="card-text text-content-bold">Built: <span class="sub-heading">${monuments[i].built}</span> </p>
+          <p class="card-text text-content-bold">Zone: <span class="sub-heading">${monuments[i].zone}</span> </p>
+          
+        </div>
+        </a>
+        </div>`
+        }
+      } else {
+        document.querySelector(".monuments-container").innerHTML = "";
+        for (let i = 0; i < monuments.length; i++) {
+          if (monuments[i].zone == zone) {
+            document.querySelector(".monuments-container").innerHTML += `<div class="card p-0 monument-card" style="width: 18rem;">
+        <a href="monument.html?id=${monuments[i].id}" class="text-decoration-none">
+        <img src="${monuments[i].img}" class="card-img-top" alt="${monuments[i].name}">
+        <div class="card-body">
+          <h5 class="card-title secondary-heading-dark">${monuments[i].name}</h5>
+          <p class="card-text text-content-bold">Country: <span class="sub-heading">${monuments[i].location}</span> </p>
+          <p class="card-text text-content-bold">Built: <span class="sub-heading">${monuments[i].built}</span> </p>
+          <p class="card-text text-content-bold">Zone: <span class="sub-heading">${monuments[i].zone}</span> </p>
+          
+        </div>
+        </a>
+        </div>`;
+          }
+        }
+      }
+    }
+    categorize("all");
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,743 @@
+/* Font Family Link */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --harvesBlessing: #bd8d4c;
+    --harvesBlessing: rgb(189, 141, 76);
+    --pupil: #070301;
+    --sandwashed: #71675a;
+    --ocelot: #f2e0c8;
+    --winterTwig: #877c6d;
+    --ruined: #0E0D12;
+    --primaray-font: "Montserrat", sans-serif;
+    --secondary-font: "Spectral SC", serif;
+    --fs-primary-heading: 50px;
+    --fs-secondary-heading: 36px;
+    --fs-third-heading: 28px;
+}
+
+/* Typography */
+
+.sub-heading {
+    color: var(--harvesBlessing);
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.primary-heading-dark {
+    color: var(--pupil);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-primary-heading);
+    font-weight: 700;
+}
+
+.secondary-heading-dark {
+    color: var(--pupil);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-secondary-heading);
+    font-weight: 700;
+}
+
+.secondary-heading-light {
+    color: var(--ocelot);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-secondary-heading);
+    font-weight: 700;
+}
+
+.primary-heading-light {
+    color: var(--ocelot);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-primary-heading);
+    font-weight: 700;
+}
+
+.third-heading-dark {
+    color: var(--ruined);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-third-heading);
+    font-weight: 700;
+}
+.footer-heading {
+    color: var(--ocelot);
+    font-family: var(--secondary-font);
+    font-size: var(--fs-third-heading);
+    font-weight: 700;
+}
+
+.text-content {
+    color: var(--winterTwig);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.text-content-bold {
+    color: var(--winterTwig);
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--primaray-font);
+}
+
+.section-btn {
+    color: var(--ocelot);
+    background-color: var(--harvesBlessing);
+    padding: 8px 40px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+}
+
+.section-btn:hover {
+    color: var(--ocelot);
+    background-color: var(--pupil);
+}
+
+.section-btn-dark {
+    color: var(--pupil);
+    background-color: var(--ocelot);
+    padding: 8px 40px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50px;
+}
+
+.section-btn-dark:hover {
+    color: var(--ocelot);
+    background-color: var(--pupil);
+}
+
+/* Classes */
+.map-links {
+    color: var(--winterTwig);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+
+}
+
+.map-links:hover {
+    color: var(--harvesBlessing);
+}
+
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.center-two {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Animations */
+
+.fade-from-left {
+    animation: fadeFromLeft 1.5s ease-in-out forwards 0.5s;
+}
+
+@keyframes fadeFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-from-right {
+    animation: fadeFromRight 1.5s ease-in-out forwards 0.5s;
+}
+
+@keyframes fadeFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(1000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-from-top {
+    animation: fadeFromTop 1s ease-in-out forwards 0.5s;
+}
+
+@keyframes fadeFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-from-bottom {
+    animation: fadeFromBottom 1s ease-in-out forwards 0.5s;
+}
+
+@keyframes fadeFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-two {
+    animation: fadeInTwo 1.5s ease-in-out forwards 0.5s;
+}
+
+.fade-in-three {
+    animation: fadeInTwo 1.5s ease-in-out forwards 0.5ms;
+}
+
+@keyframes fadeInTwo {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Reset Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primaray-font);
+}
+
+/* Pre Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pupil);
+    transition: opacity 0.75s, visibilty 0.75s;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+}
+
+.spinner {
+    border: 6px solid var(--ruined);
+    border-left-color: var(--harvesBlessing);
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Scroll To Top */
+.scrollup {
+    position: fixed;
+    z-index: 999;
+    bottom: 20px;
+    right: 25px;
+    font-size: 20px;
+    color: var(--pupil);
+    background-color: var(--harvesBlessing);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.4s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll-up-active {
+    bottom: 25px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* header */
+
+.header {
+    height: 100vh;
+    position: relative;
+    top: -106px;
+
+}
+
+.header-2 {
+    height: 70vh;
+    position: relative;
+    top: -106px;
+
+}
+
+/* Footer */
+.footer {
+    background-color: var(--pupil);
+    position: relative;
+}
+
+.line {
+    border: .5px solid var(--ocelot);
+    opacity: 0.3;
+}
+
+/* Nav bar */
+
+.nav {
+    --bs-navbar-color: #f2e0c8 !important;
+    --bs-navbar-active-color: #bd8d4c !important;
+    --bs-navbar-hover-color: #bd8d4c !important;
+    z-index: 100;
+}
+
+.nav-typo {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: var(--primaray-font);
+    text-transform: uppercase !important;
+}
+
+.dropdown-toggle,
+.dropdown-item {
+    --bs-navbar-color: #f2e0c8 !important;
+    --bs-navbar-active-color: #bd8d4c !important;
+    --bs-navbar-hover-color: #bd8d4c !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    font-family: var(--primaray-font) !important;
+    text-transform: uppercase !important;
+    margin-top: 0px !important;
+}
+
+
+.nav-contact-btn {
+    width: 150px;
+    border-radius: 50px;
+    color: var(--ocelot);
+    border: 2px solid var(--harvesBlessing);
+}
+
+.nav-contact-btn:hover {
+    background-color: var(--harvesBlessing);
+    color: var(--ocelot);
+    transition: all 0.2s ease-in;
+}
+
+.nav-scrolled {
+    background-color: var(--ruined) !important;
+    transition: all 0.3s ease-in;
+}
+
+/* Banner */
+.home-banner::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--pupil);
+    opacity: 0.6;
+}
+
+.home-banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* seconde Banner */
+.home-banner-2::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--pupil);
+    opacity: 0.6;
+}
+
+.home-banner-2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70vh;
+}
+
+.banner-2 {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.banner-2 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+}
+
+.banner-content span {
+    display: inline-block;
+    color: var(--harvesBlessing);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Wonders - Section */
+
+.wonders {
+    /* margin: 100px 0; */
+    margin-top: 100px;
+}
+
+.parallax {
+    background: url('../Assets/Images/home-wonder-sec-bg.jpeg') fixed center / cover no-repeat;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.monument-parallax {
+    background: url('../Assets/Images/Backgrounds-Texture-Imgs/background-texture-15.jpg') fixed center / cover no-repeat;
+    min-height: 100vh;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070301c0;
+    overflow: auto;
+}
+.monument-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070301a1;
+    overflow: auto;
+}
+
+.wonder-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.wonder-feature-card{
+    transition: all 0.3s ease-in-out;
+}
+
+.wonder-feature-card:hover{
+    transform: translateY(-20px);
+}
+
+
+.wonder-card-title {
+    font-size: var(--fs-third-heading);
+    color: var(--pupil);
+    font-weight: bold;
+}
+
+.wonder-card-location {
+    color: var(--harvesBlessing);
+    font-weight: bold;
+}
+
+.wonder-card-excerpt {
+    color: var(--sandwashed);
+    font-weight: 500;
+}
+
+/* Top - Monumens - Section */
+#monuments {
+    background: url('../Assets/Images/Backgrounds-Texture-Imgs/background-texture-10.jpg') no-repeat bottom / cover;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+
+.top-monument-card {
+    transition: all 0.5s ease-in-out;
+}
+
+.top-monument-card:hover {
+    transform: translateY(-10px);
+}
+
+.top-monument-card-img-top {
+    transition: transform 0.5s ease;
+    height: 250px;
+}
+
+.top-monument-card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.top-monument-card-title {
+    font-size: var(--fs-third-heading);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+}
+
+
+.top-monument-card-body {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e0d12dc;
+    color: var(--ocelot);
+    padding: 10px;
+}
+
+.top-monument-card:hover .top-monument-card-body {
+    display: block;
+}
+
+/* Get in Touch / Faq Section  */
+
+/* Faq */
+
+.faq {
+    background: url('../Assets/Images/Backgrounds-Texture-Imgs/background-texture-1.jpeg') center center no-repeat;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23f2e0c8' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+
+.accordion-button {
+    color: var(--ocelot);
+    background-color: var(--ruined);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--ruined);
+    background-color: var(--harvesBlessing);
+}
+
+.faq-header-btn {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.accordion-body strong {
+    color: var(--harvesBlessing);
+
+}
+
+.accordion-body {
+    font-size: 15px;
+    color: var(--winterTwig);
+    font-weight: 500;
+
+}
+
+/* Git Form */
+
+.get-in-touch {
+    background: url('../Assets/Images/Backgrounds-Texture-Imgs/background-texture-3.jpeg') center center no-repeat;
+    background-size: cover;
+    border-radius: 0 5px 5px 0;
+}
+
+.form-label {
+    color: var(--harvesBlessing);
+    font-size: var(--primaray-font);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form-label-2 {
+    color: var(--winterTwig);
+    font-size: var(--primaray-font);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2.5;
+}
+
+.form-control {
+    font-size: 15px;
+    color: var(--winterTwig);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.form-control-2 {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: var(--winterTwig);
+    letter-spacing: 1px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 10px 0.15rem #bd8d4c;
+}
+
+.form-control-2:focus {
+    color: var(--winterTwig);
+    background-color: var(--bs-body-bg);
+    border: 2px solid var(--harvesBlessing);
+    box-shadow: none !important;
+}
+
+.form-control-2::placeholder {
+    color: var(--winterTwig);
+    font-size: var(--primaray-font);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Feedback - Section */
+
+/* Join Our Journey Section */
+.join-our-journey-section {
+    background: url('../Assets/Images/Backgrounds-Texture-Imgs/background-texture-11.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.feedback-section {
+    background: var(--ocelot);
+}
+
+.feedback-img-box {
+    background: url("../Assets/Images/home-feedback-1.jpeg") no-repeat center center;
+    background-size: cover;
+}

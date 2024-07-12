@@ -1,0 +1,178 @@
+/* Font Size Responsiveness */
+@media screen and (max-width: 1400px) {
+    :root {
+        --fs-primary-heading: 42px;
+        --fs-secondary-heading: 33px;
+        --fs-third-heading: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --fs-primary-heading: 38px;
+        --fs-secondary-heading: 28px;
+        --fs-third-heading: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    :root {
+        --fs-primary-heading: 34px;
+        --fs-secondary-heading: 24px;
+        --fs-third-heading: 16px;
+    }
+}
+
+/* Nav Bar Responsiveness */
+
+@media screen and (min-width: 992px) and (max-width: 1160px) {
+    .nav {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .nav-contact-btn {
+        display: none;
+    }
+
+    .contact-icon {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav {
+        background-color: #000;
+        --bs-navbar-color: #f2e0c8;
+        --bs-navbar-active-color: #bd8d4c;
+        --bs-navbar-hover-color: #bd8d4c;
+        --bs-navbar-toggler-border-color: #f2e0c8;
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
+
+    [data-bs-theme=dark] .navbar-toggler-icon {
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
+
+    .card {
+        --bs-card-spacer-y: 1rem;
+    }
+
+    .nav-contact-btn {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/* About Section Responsiveness */
+@media screen and (max-width: 767px) {
+    .rd-flex{
+        flex-direction: column !important;
+    }
+    .column{
+        width: 100% !important;
+        padding: 10px 0 !important;
+    }
+    .banner-content h1 {
+        font-size: 50px;
+    }
+
+}
+/* Wonder Section Responsiveness */
+@media screen and (max-width: 767px) {
+    .wonders .card-1, .card-2{
+        display: none;
+    }
+    .parallax {
+        height: 100vh;
+    }
+}
+
+/* Parallex Responsiveness */
+@media screen and (max-width: 992px) {
+    .monument-parallax{
+        height: 130vh;
+    }
+}
+@media screen and (max-width: 767px) {
+    .monument-parallax{
+        height: 140vh;
+    }
+}
+@media screen and (max-width: 576px) {
+    .monument-parallax{
+        height: 190vh;
+    }
+}
+@media screen and (max-width: 300px) and (min-width: 200px) {
+    .monument-parallax{
+        height: 230vh;
+    }
+}
+
+/* Top Monuments Section Responsiveness */
+@media screen and (max-width: 767px) {
+    #monuments{
+        background: none;
+    }
+}
+/* Feed back Section Responsiveness */
+@media screen and (max-width: 767px) {
+    .feedback-content{
+        text-align: center;
+    }
+}
+
+/* About Us Page  */
+@media screen and (max-width: 767px) {
+    .our-story-section {
+        padding: 5rem 0 !important;
+    }
+}
+
+
+
+/* Footer */
+@media screen and (max-width: 767px) {
+    .footer-logo{
+        display: none !important;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer-container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px) {
+    .footer-about-img{
+        display: none;
+    }
+    .footer-about-heading{
+        display: block !important;
+    }
+}
+
+/* Contact page */
+@media screen and (max-width: 992px) {
+   .contact-container{
+    width: 75% !important;
+   }
+}
+@media screen and (max-width: 768px) {
+   .contact-container{
+    width: 100% !important;
+   }
+}
+@media screen and (max-width: 576px) {
+   .contact-map{
+    height: 300px !important;
+   }
+}
+
+

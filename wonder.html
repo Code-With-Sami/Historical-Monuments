@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap - Link -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Responsive Css File -->
+    <link rel="stylesheet" href="Css/responsive.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon-32x32.png">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: var(--ocelot);
+        }
+
+        .about-two__image {
+            width: 370px;
+            height: 340px;
+            background-color: var(--harvesBlessing);
+            position: relative;
+        }
+
+        .about-two__image--1 {
+            position: absolute;
+            bottom: -30px;
+            left: 100px;
+            z-index: 12;
+        }
+
+        .about-two__image--2 {
+            position: absolute;
+            top: -30px;
+            right: 100px;
+            z-index: 9;
+        }
+
+        .about-two__image-content {
+            width: 370px;
+            height: 300px;
+            border: 2px solid var(--harvesBlessing);
+            padding: 30px;
+            position: absolute;
+            bottom: 20px;
+            left: 70px;
+            transform: translateY(-50%);
+            z-index: 11;
+        }
+
+        .about-two__image-content {
+            display: flex;
+        }
+
+        .about-two__image-decor {
+            width: 148px;
+            height: 48px;
+            border-right: 2px solid #d99578;
+            background-image: linear-gradient(180deg, #f2ebe8 19%, white 100%);
+            margin-right: 15px;
+        }
+
+        .about-two__image-content-main {
+            display: flex;
+        }
+
+        .about-two__image-content-left {
+            font-size: 60px;
+            color: var(--harvesBlessing);
+            line-height: 1em;
+            font-family: var(--secondary-font);
+        }
+
+        .about-two__image-content-right {
+            margin-left: 10px;
+        }
+
+        .about-two__image-content {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <img src="Assets/Logo/city-hall.png" alt="Logo">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Bottom To Top Scroll -->
+    <a href="#" class="scrollup text-decoration-none" id="scroll-up"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top nav px-5 py-4" id="nav-placeholder">
+
+    </nav>
+
+    <!-- Header -->
+
+    <header class="header-2">
+
+        <!-- Banner -->
+
+        <section class="home-banner-2">
+            <div class="banner-2">
+                <img src="" alt="" class="monument-banner-img">
+                <div class="banner-content hide">
+                    <h1 class="primary-heading-light fade-in-two">Seven Wonders</h1>
+                    <span class="fade-in monument-banner-heading">Explore the World's Iconic Historical Monuments</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Intro - Section -->
+    <section class="intro-section py-sm-5">
+        <div class="container intro-container d-flex rd-flex flex-lg-row flex-column align-items-center justify-content-center">
+            <div class="column w-100 w-lg-50 mb-5 mb-lg-0 intro-content pe-sm-5 pe-xl-0 pb-sm-5">
+                <h2 class="primary-heading-dark monument-name"></h2>
+                <p class="text-content monument-content-one"></p>
+            </div>
+
+            <div class="column w-100 w-lg-50 d-none d-sm-block">
+                <div class="mt-5 intro-image d-flex align-items-end justify-content-center">
+                    <div class="about-two__image">
+                        <img src="" alt="Awesome Image" class="about-two__image--1" width="330">
+                        <img src="" alt="Awesome Image" class="about-two__image--2" width="330">
+                        <div class="about-two__image-content">
+                            <div class="about-two__image-decor"></div>
+                            <div class="about-two__image-content-main">
+                                <div class="about-two__image-content-left"> E </div>
+                                <div class="about-two__image-content-right">
+                                    <span class="text-content-bold">stablished</span> <br>
+                                    <span class="about-two__year counter text-content-bold built-date"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Width Dual Column Section One -->
+
+    <section class="inspiration-section px-0 py-md-5 my-md-5">
+        <div class="container d-flex rd-flex pt-5 px-0 py-5 justify-content-center align-items-center" >
+            <div class="column w-50">
+                <img src="" alt="" class="center rounded imgTwo">
+            </div>
+            <div class="column w-50 px-5 py-2 d-flex flex-column justify-content-center align-items-start">
+                <h6 class="sub-heading uppercase subHeadingOne"></h6>
+                <h2 class="primary-heading-dark headingOne"></h2>
+                <p class="text-content monument-content-two"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallex Section -->
+
+    <section class="monument-parallax" >
+        <div class="monument-overlay">
+            <div class="wonder-container container py-5">
+                <h2 class="primary-heading-light headingTwo"></h2>
+                <div class="container">
+                    <p class="text-content-bold monument-content-three"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Width Dual Column Section Two -->
+
+    <section class="inspiration-section px-0 my-5 py-5">
+        <div class="container d-flex rd-flex px-0 py-5 justify-content-center align-items-center">
+            <div class="column w-50 px-4 py-2 d-flex flex-column justify-content-center align-items-start">
+                <h6 class="sub-heading uppercase subHeadingTwo"></h6>
+                <h2 class="primary-heading-dark headingThree"></h2>
+                <p class="text-content monument-content-four"></p>
+            </div>
+            <div class="column w-50 ">
+                <img src="" alt="" class="center rounded imgThree">
+            </div>
+        </div>
+    </section>
+
+    <!-- container Width  Dual Column Section One -->
+
+    <section class="my-5">
+        <div class="container d-flex rd-flex py-5 align-items-center">
+            <div class="column w-50">
+                <img src="" alt="" class="center rounded imgFour">
+            </div>
+            <div class="column w-50">
+                <h6 class="sub-heading uppercase subHeadingThree"></h6>
+                <h2 class="primary-heading-dark Download Our Monuments headingFour">Inspiration</h2>
+                <p class="text-content monument-content-five"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download - Featured Section -->
+
+    <section class="our-commitment-section bg-black">
+        <div class="container-fluid d-flex rd-flex align-items-center">
+            <div class="column w-50 " style="padding: 150px 50px;">
+                <h6 class="sub-heading uppercase"><i class="fa-solid fa-circle-info mx-2"
+                        style="color: var(--harvesBlessing);"></i>Free</h6>
+                <h2 class="primary-heading-light">Download Our Monuments</h2>
+                <p class="text-content">At Historical Monuments, we are committed to promoting sustainable practices in
+                    the exploration and preservation of historical monuments. We recognize the importance of minimizing
+                    our environmental footprint and preserving the natural and cultural resources associated with these
+                    sites. Through responsible travel recommendations, conservation efforts, and community engagement
+                    initiatives, we strive to ensure that future generations can continue to enjoy and learn from these
+                    invaluable treasures.</p>
+                <a href="#" class="pdf-link" download=""><button class="btn section-btn mt-4">Download</button></a>
+            </div>
+            <div class="column w-50 pt-5">
+                <img src="Assets/Images/download-featured-img-3.jpg" alt="" class="center-two">
+            </div>
+        </div>
+    </section>
+
+    <!-- Advertise - Section -->
+    <section class="our-mission-section" style="background-color: white;">
+        <div class="container d-flex rd-flex py-5 align-items-center">
+            <div class="column w-50">
+                <img src="Assets/Images/travel-featured-img-2.jpg" alt="" class="center-two rounded">
+            </div>
+            <div class="column w-50 py-3 px-4">
+                <h6 class="sub-heading uppercase"><i class="fa-solid fa-circle-info mx-2"
+                        style="color: var(--harvesBlessing);"></i>Trave-With-us</h6>
+                <h2 class="primary-heading-dark">Take a tour with us</h2>
+                <p class="text-content">At Hiatorical Monuments, we invite you to embark on an unforgettable journey
+                    through
+                    time and culture as we explore the world's most iconic historical monuments. Our passion for
+                    heritage
+                    and fascination with ancient civilizations drive us to share the wonders of the past with you.</p>
+                <p class="text-content">Step into the footsteps of emperors, pharaohs, and rulers of antiquity as we
+                    delve
+                    into the rich tapestry of human civilization. From the breathtaking grandeur of the Great Wall of
+                    China
+                    to the mystical allure of Machu Picchu, each monument we encounter tells a st my-4ory of triumph,
+                    innovation,
+                    and the enduring spirit of humanity.</p>
+                <a href="travel-with-us.html"><button class="btn section-btn">Read More</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feed Back Section -->
+
+    <section class="join-our-journey-section mb-5">
+        <div class="container mx-auto text-center py-5 px-5">
+            <h6 class="sub-heading">Journey</h6>
+            <h2 class="primary-heading-light">Join Our Journey</h2>
+            <p class="text-content text-light my-4">We invite you to join us on our journey of discovery and
+                appreciation for
+                the world's historical monuments. Whether you're a seasoned traveler, a history buff, or simply curious
+                about the past, there's a place for you in our community. Follow us on social media, sign up for our
+                newsletter, or become a contributor to share your own experiences and insights. Together, let's
+                celebrate the wonders of history and ensure that they remain cherished for generations to come.</p>
+            <a href="feedback.html"><button class="btn section-btn-dark">Give feedback</button></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-5" id="footerPlaceholder">
+
+    </footer>
+
+    <!-- Java Script -->
+
+    <!-- Bootstrap Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="Bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- Gsap Library Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery - Cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Js Files -->
+    <script src="Js/script.js"></script>
+    <script src="Js/wonders.js"></script>
+    <script src="Js/HFB.js"></script>
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let productId = urlParams.get('id'); // Get the id parameter from the URL
+
+        // Find the product with the matching id
+        let wonder = wonders.find(item => item.id === productId);
+
+        if (wonder) {
+            // Update the HTML with the wonder details
+
+            // Title
+            document.title = wonder.name + ' || Seven Wonders || Historical Monument';
+
+            // Banner Img
+            document.querySelector(".monument-banner-img").src = wonder.img;
+
+            // Banner Heading
+            document.querySelector(".monument-banner-heading").innerHTML = wonder.name;
+
+            // Pdf Link 
+            document.querySelector(".pdf-link").href = wonder.pdf;
+
+            // Intro Section
+            document.querySelector(".monument-name").innerHTML += wonder.name;
+            document.querySelector(".monument-content-one").innerHTML += wonder.contentParaOne;
+            document.querySelector(".about-two__image--1").src = wonder.img;
+            document.querySelector(".about-two__image--2").src = wonder.imgTwo;
+            document.querySelector(".built-date").innerHTML = wonder.built;
+
+            // Full Width Dual Column Section One
+            document.querySelector(".imgTwo").src = wonder.imgThree;
+            document.querySelector(".subHeadingOne").innerHTML = wonder.subHeadingOne;
+            document.querySelector(".headingOne").innerHTML = wonder.headingOne;
+            document.querySelector(".monument-content-two").innerHTML = wonder.contentParaTwo;
+
+            // Parallex Section
+            document.querySelector(".monument-content-three").innerHTML = wonder.contentParaThree;
+            document.querySelector(".headingTwo").innerHTML = wonder.headingTwo;
+
+            // Full Width Dual Column Section Two
+            document.querySelector(".subHeadingTwo").innerHTML = wonder.subHeadingTwo;
+            document.querySelector(".headingThree").innerHTML = wonder.headingThree;
+            document.querySelector(".monument-content-four").innerHTML = wonder.contentParaFour;
+            document.querySelector(".imgThree").src = wonder.imgFour;
+
+            // container Width  Dual Column Section One
+            document.querySelector(".imgFour").src = wonder.imgFive;
+            document.querySelector(".subHeadingThree").innerHTML = wonder.subHeadingThree;
+            document.querySelector(".headingFour").innerHTML = wonder.headingFour;
+            document.querySelector(".monument-content-five").innerHTML = wonder.contentParaFive;
+
+        } else {
+            // If product is not found, display an error message
+            document.querySelector(".name").innerHTML += "Product not found";
+        }
+    </script>
+</body>
+
+</html>

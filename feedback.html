@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Css Lins -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Responsive Css File -->
+    <link rel="stylesheet" href="Css/responsive.css">
+    <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon-32x32.png">
+    <title>Feedback || Historical Monuments</title>
+    <style>
+        .feedback-section {
+            background: url('Assets/Images/feedback-bg-1.jpeg') center center no-repeat !important;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        label.radio-label {
+            display: inline-block;
+            font-size: 30px;
+            padding: 20px;
+            cursor: pointer;
+            width: 50px;
+            margin-left: 35px;
+        }
+
+        label.radio-label::before {
+            margin-right: 5px;
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        input[type="radio"]:checked+label.radio-label::before {
+            background-color: var(--harvesBlessing);
+            padding: 20px;
+            border-radius: 50%;
+        }
+
+        label.cry::before {
+            content: '😥';
+        }
+
+        input[type="radio"]:checked+label.cry::before {
+            content: '😥';
+        }
+
+        label.normal::before {
+            content: '🙂';
+        }
+
+        input[type="radio"]:checked+label.normal::before {
+            content: '🙂';
+        }
+
+        label.good::before {
+            content: '😁';
+        }
+
+        input[type="radio"]:checked+label.good::before {
+            content: '😁';
+        }
+
+        label.happy::before {
+            content: '🥰';
+        }
+
+        input[type="radio"]:checked+label.happy::before {
+            content: '🥰';
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <img src="Assets/Logo/city-hall.png" alt="Logo">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Bottom To Top Scroll -->
+    <a href="#" class="scrollup text-decoration-none" id="scroll-up"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg sticky-top nav px-5 py-4" id="nav-placeholder">
+
+    </nav>
+
+    <header class="header">
+
+        <!-- Banner -->
+
+        <section class="home-banner">
+            <div class="banner">
+                <img src="Assets/Images/feedback-bg-1.jpeg" alt="Feedback-img" class="banner-img">
+                <!-- <video src="Assets/Videos/home-slide-fv-1.mp4" class="banner-video" autoplay muted loop></video> -->
+                <div class="banner-content hide">
+                    <h1 class="primary-heading-light fade-from-left">Thanks For visiting our website</h1>
+                    <span class="fade-from-right">PLease share you feedback with us so we can improve</span>
+                    <div class="feedback-btn-container d-flex fade-in justify-content-center">
+                        <button type="button" class="btn section-btn mt-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Give Feedback</button>
+                        <h5 class="text-content-bold mt-4 ms-4">press enter</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Modal - Feedback Form -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title secondary-heading-dark" id="exampleModalLabel">Give Feedback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="needs-validation" novalidate>
+                        <div>
+
+                            <p class="text-center text-content-bold">What's your opinion about our website</p>
+                            <input type="radio" id="option1" name="radio-option" value="option1" required>
+                            <label for="option1" class="radio-label cry"></label>
+
+                            <input type="radio" id="option2" name="radio-option" value="option2" required>
+                            <label for="option2" class="radio-label normal"></label>
+
+                            <input type="radio" id="option3" name="radio-option" value="option3" required>
+                            <label for="option3" class="radio-label good"></label>
+
+                            <input type="radio" id="option4" name="radio-option" value="option4" required>
+                            <label for="option4" class="radio-label happy"></label>
+                            <div class="invalid-feedback">
+                                <b>
+                                    Please select your opinion.
+                                </b>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div>
+
+                            <p class="text-content">
+                                PLease select your feedback category below
+                            </p>
+                            <select name="category" id="category" class="w-100 p-2 rounded form-select">
+                                <option value="suggestion">suggestion</option>
+                                <option value="something">Something is not quite right</option>
+                                <option value="compliment">compliment</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select your category.
+                            </div>
+
+                        </div>
+                        <hr>
+
+                        <div>
+
+                            <p class="text-content">
+                                PLease leave your feedback below
+                            </p>
+                            <textarea name="feedback" id="feedback" rows="6" class="w-100 form-control" required
+                                minlength="20"></textarea>
+                            <div class="invalid-feedback">
+                                Please write your feedback, Atleast 20 Characters.
+                            </div>
+                        </div>
+
+                </div>
+                <div class="modal-footer">
+                    <input type="reset" value="Reset" class="btn section-btn-dark">
+                    <input type="submit" value="Submit" class="btn section-btn">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feedbak - content -->
+    <section class="your-expereince-section">
+        <div class="your-expereince-container container mx-auto mb-5 text-center">
+            <h2 class="primary-heading-dark text-center">Share Your Expeeince</h2>
+            <div class="row w-100 justify-content-center gap-5 py-5 text-start">
+                <div class="col-md-5">
+                    <h6 class="sub-heading uppercase"><i class="fa-solid fa-heart me-2" style="color: var(--harvesBlessing);"></i>Value</h6>
+                    <h2 class="third-heading-dark">We Value Your Feedback</h2>
+                    <p class="text-content">At Historical Monuments, your opinion matters. Whether you've embarked on a
+                        journey to explore historical monuments or simply browsed through our content, we want to hear
+                        about your experience. Your feedback helps us improve and tailor our offerings to better serve
+                        you and the community of history enthusiasts worldwide.</p>
+                </div>
+                <div class="col-md-5 mt-3">
+                    <h6 class="sub-heading uppercase"><i class="fa-solid fa-circle-dollar-to-slot me-2" style="color: var(--harvesBlessing);"></i>Contribute</h6>
+                    <h2 class="third-heading-dark">How Can You Contribute?</h2>
+                    <p class="text-content">Sharing your thoughts is easy. Whether it's a suggestion for a new feature,
+                        a comment on an article, or a personal anecdote about your visit to a historical monument, we
+                        welcome all forms of feedback. Your unique perspective adds depth and richness to our platform,
+                        creating a more vibrant and engaging experience for everyone.</p>
+                </div>
+                <div class="col-md-5">
+                    <h6 class="sub-heading uppercase"><i class="fa-solid fa-voicemail me-2" style="color: var(--harvesBlessing);"></i>Voice</h6>
+                    <h2 class="third-heading-dark">Let Your Voice Be Heard</h2>
+                    <p class="text-content">By sharing your feedback, you become an integral part of our community. Your
+                        insights not only shape the direction of [Your Website Name] but also contribute to the
+                        collective knowledge and appreciation of historical monuments. Together, we can continue to
+                        celebrate and preserve the wonders of our shared heritage.</p>
+                </div>
+                <div class="col-md-5 mt-3">
+                    <h6 class="sub-heading uppercase"><i class="fa-solid fa-comment me-2" style="color: var(--harvesBlessing);"></i>Your Feedback</h6>
+                    <h2 class="third-heading-dark">How We Use Your Feedback</h2>
+                    <p class="text-content">Every comment, suggestion, and review is carefully considered. We use your
+                        feedback to make informed decisions about content creation, website features, and community
+                        engagement initiatives. Your input guides us in creating a platform that truly resonates with
+                        the interests and needs of history enthusiasts like you.</p>
+                </div>
+                <div class="col-md-5 mt-3">
+                    <h6 class="sub-heading uppercase"><i class="fa-solid fa-link me-2" style="color: var(--harvesBlessing);"></i>Connect</h6>
+                    <h2 class="third-heading-dark">Connect With Us</h2>
+                    <p class="text-content">Ready to share your thoughts? Connect with us through our feedback form,
+                        social media channels, or email. Your feedback is invaluable to us, and we look forward to
+                        hearing from you. Join us in our mission to celebrate the wonders of history and ensure that
+                        they continue to inspire generations to come.</p>
+                </div>
+                <div class="col-md-5 mt-3">
+                    <h6 class="sub-heading uppercase"><i class="fa-solid fa-church me-2" style="color: var(--harvesBlessing);"></i>Community</h6>
+                    <h2 class="third-heading-dark">Join Our Community</h2>
+                    <p class="text-content">At Historical Monuments, feedback is more than just comments – it's a
+                        conversation. Join our growing community of history lovers and enthusiasts by sharing your
+                        experiences, insights, and questions. Engage with fellow travelers, historians, and explorers
+                        from around the world who share your passion for historical monuments. Together, we can create a
+                        dynamic and interactive platform where the love for history thrives and stories are shared. Your
+                        voice matters, and we invite you to be a part of this exciting journey with us.</p>
+                </div>
+
+            </div>
+            <button type="button" class="btn section-btn mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Give Feedback</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-5" id="footerPlaceholder">
+
+
+        <!-- Java Script -->
+
+        <!-- bootstrap - link -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="Bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        <!-- Gsap Library Link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Jquery - Cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Js File  -->
+        <script src="Js/script.js"></script>
+        <script src="Js/HFB.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap - Link -->
+    <link rel="stylesheet" href="Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- Responsive Css File -->
+    <link rel="stylesheet" href="Css/responsive.css">
+    <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="Assets/Logo/favicon-32x32.png">
+    <title>Gallery || Historical Monuments</title>
+    <style>
+        #gallery {
+            margin: 20px auto;
+        }
+
+        .thumbnail {
+            margin: 20px;
+            width: 350px;
+            height: 250px;
+            cursor: pointer;
+            border-radius: 6px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+        
+        #lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            text-align: center;
+        }
+
+        #lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            margin-top: 5%;
+            border: 3px solid var(--harvesBlessing);
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+        }
+
+        #close {
+            color: var(--harvesBlessing);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 4rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="loader">
+        <img src="Assets/Logo/city-hall.png" alt="Logo">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Bottom To Top Scroll -->
+    <a href="#" class="scrollup text-decoration-none" id="scroll-up"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg sticky-top nav px-5 py-4" id="nav-placeholder">
+
+    </nav>
+
+    <!-- Header -->
+
+    <header class="header-2">
+
+        <!-- Banner -->
+
+        <section class="home-banner-2">
+            <div class="banner-2">
+                <img src="Assets/Images/Slider-Img/gallery-1.jpg" alt="">
+                <div class="banner-content hide">
+                    <h1 class="primary-heading-light fade-in-two">Gallery</h1>
+                    <span class="fade-in">Discover the Canvas of Creativity: Explore Our Gallery</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section container-fluid mx-auto">
+        <h2 class="primary-heading-dark text-center">Explore Our Gallery</h2>
+        <div id="gallery" class="d-flex flex-wrap justify-content-center container-fluid py-3">
+            <img class="thumbnail" src="Assets/Images/eiffel-tower-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/acropolis-of-athens.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/eiffel-tower-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/acropolis-of-athens-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/alcázar-of-seville-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/alhambra-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/alcázar-of-seville-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/alhambra-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/angkor-wat-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/bagan-temples-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/angkor-wat-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/bagan-temples-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/blue-mosque-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/borobudur-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/blue-mosque-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/borobudur-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/brandenburg-gate-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/chartres-cathedral-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/brandenburg-gate-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/chartres-cathedral-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/chichen-itza-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/christ-the-redeemer-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/chichen-itza-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/christ-the-redeemer-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/colosseum-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/easter-Island-moai-statues-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/colosseum-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/easter-Island-moai-statues-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/edinburgh-castle-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/forbidden-city-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/edinburgh-castle-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/forbidden-city-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/golden-gate-bridge-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/great-mosque-of-cordoba-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/golden-gate-bridge-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/great-mosque-of-cordoba-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/great-wall-of-china-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/hagia-sophia-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/great-wall-of-china-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/hagia-sophia-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/karnak-temple-complex-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/kremlin-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/karnak-temple-complex-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/kremlin-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/lalibela-churches-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/leaning-tower-of-pisa-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/lalibela-churches-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/leaning-tower-of-pisa-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/machu-picchu-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/mont-saint-michel-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/machu-picchu-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/mont-saint-michel-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/mount-rushmore-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/neuschwanstein-castle-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/mount-rushmore-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/neuschwanstein-castle-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/palmyra-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/parthenon-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/palmyra-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/persepolis-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/petra-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/persepolis-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/petra-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/pompeii-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/potala-palace-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/pompeii-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/potala-palace-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/pyramids-of-giza-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/sagrada-familia-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/pyramids-of-giza-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/sagrada-familia-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/sigiriya-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/st-peter's-basilica-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/sigiriya-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/statue-of-liberty-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/sydney-opera-house-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/statue-of-liberty-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/sydney-opera-house-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/taj-mehal-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/terracotta-army-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/taj-mehal-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/timbuktu-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/tower-bridge-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/timbuktu-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/tower-bridge-2.jpg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/tower-of-london-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/zcropolis-of-athens-1.jpeg" alt="Image">
+            <img class="thumbnail" src="Assets/Images/tower-of-london-2.jpg" alt="Image">
+        </div>
+        <div class="text-center">
+            <button id="load-more" class="btn section-btn mt-3">Load More</button>
+        </div>
+        <div id="lightbox">
+            <span id="close">&times;</span>
+            <img id="lightbox-image" src="" alt="Enlarged Image">
+        </div>
+    </section>
+
+    <!-- Feed Back Section -->
+
+    <section class="join-our-journey-section my-5">
+        <div class="container mx-auto text-center py-5 px-5">
+            <h6 class="sub-heading">Journey</h6>
+            <h2 class="primary-heading-light">Join Our Journey</h2>
+            <p class="text-content text-light my-4">We invite you to join us on our journey of discovery and
+                appreciation for
+                the world's historical monuments. Whether you're a seasoned traveler, a history buff, or simply curious
+                about the past, there's a place for you in our community. Follow us on social media, sign up for our
+                newsletter, or become a contributor to share your own experiences and insights. Together, let's
+                celebrate the wonders of history and ensure that they remain cherished for generations to come.</p>
+            <a href="feedback.html"><button class="btn section-btn-dark">Give feedback</button></a>
+        </div>
+    </section>
+
+    <!-- Advertise - Section -->
+
+    <section class="our-mission-section" style="background-color: white;">
+        <div class="container d-flex rd-flex py-5">
+            <div class="column w-50">
+                <img src="Assets/Images/travel-featured-img-2.jpg" alt="" class="center-two rounded">
+            </div>
+            <div class="column w-50 py-3 px-4">
+                <h6 class="sub-heading uppercase"><i class="fa-solid fa-circle-info mx-2"
+                        style="color: var(--harvesBlessing);"></i>Trave-With-us</h6>
+                <h2 class="primary-heading-dark">Take a tour with us</h2>
+                <p class="text-content">At Hiatorical Monuments, we invite you to embark on an unforgettable journey
+                    through
+                    time and culture as we explore the world's most iconic historical monuments. Our passion for
+                    heritage
+                    and fascination with ancient civilizations drive us to share the wonders of the past with you.</p>
+                <p class="text-content">Step into the footsteps of emperors, pharaohs, and rulers of antiquity as we
+                    delve
+                    into the rich tapestry of human civilization. From the breathtaking grandeur of the Great Wall of
+                    China
+                    to the mystical allure of Machu Picchu, each monument we encounter tells a st my-4ory of triumph,
+                    innovation,
+                    and the enduring spirit of humanity.</p>
+                <a href="travel-with-us.html"><button class="btn section-btn">Read More</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-5" id="footerPlaceholder">
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <!-- Bootstrap - Js - link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="Bootstrap/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <!-- Gsap Library Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery - Cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Js file -->
+    <script src="Js/script.js"></script>
+    <script src="Js/HFB.js"></script>
+    <script>
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const closeBtn = document.getElementById('close');
+
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function () {
+                lightbox.style.display = 'block';
+                lightboxImage.src = this.src.replace('thumbnail', '');
+            });
+        });
+
+        closeBtn.addEventListener('click', function () {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', function (event) {
+            if (event.target === this) {
+                lightbox.style.display = 'none';
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            var thumbnails = $(".thumbnail");
+            var numToShow = 20; // Number of images to show initially
+            var numToIncrement = 20; // Number of images to load each time "Load More" is clicked
+            var currentIndex = 0;
+    
+            // Hide images beyond the initial number
+            thumbnails.slice(numToShow).hide();
+    
+            $("#load-more").on("click", function() {
+                var currentLength = $("#gallery img:visible").length;
+                var remaining = thumbnails.length - currentLength;
+                var toShow = Math.min(remaining, numToIncrement);
+    
+                thumbnails.slice(currentIndex + numToShow, currentIndex + numToShow + toShow).show();
+    
+                currentIndex += toShow;
+    
+                if (currentIndex >= thumbnails.length) {
+                    $("#load-more").hide();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
